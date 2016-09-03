@@ -45,9 +45,17 @@ PROCEDURE multistack IS
                  WHILE Opcode NOT IN Quitops LOOP
                     Put("What op? "); New_Line; Get(Opcode);
                     IF Opcode IN Pushops THEN
-                       User_Stack.Push(1);
+                        if user_stack.full then
+                            put("stack full"); new_line;
+                        else
+                            User_Stack.Push(1);
+                        end if;
                     ELSIF Opcode IN Popops THEN
-                       User_Stack.Pop(IntPop); Put(IntPop); New_Line;
+                        if user_Stack.empty then
+                            put("stack empty"); new_line;
+                        else
+                            User_Stack.Pop(IntPop); Put(IntPop); New_Line;
+                        end if;
                     end if;
                  END LOOP;
               END;
@@ -59,12 +67,21 @@ PROCEDURE multistack IS
                  WHILE Opcode NOT IN Quitops LOOP
                     Put("What op? "); New_Line; Get(Opcode);
                     IF Opcode IN Pushops THEN
-                       User_Day.Month := January;
-                       User_Day.Day := 1;
-                       User_Day.Year := 2009;
-                       User_Stack.Push(User_Day);
+                        if user_stack.full then
+                            put("stack full");
+                        else
+                            User_Day.Month := January;
+                            User_Day.Day := 1;
+                            User_Day.Year := 2009;
+                            User_Stack.Push(User_Day);
+                        end if;
                     ELSIF Opcode IN Popops THEN
-                       User_Stack.Pop(User_Day); Put(User_Day.Month); New_Line;
+                        if user_stack.empty then
+                            put("stack empty");
+                        else
+                            User_Stack.Pop(User_Day); Put(User_Day.Month);
+                            put(User_day.Day); put(user_day.year); New_Line;
+                        end if;
                     end if;
                  END LOOP; 
               END;

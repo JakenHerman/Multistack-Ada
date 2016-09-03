@@ -1,0 +1,133 @@
+V "GNAT Lib v2016"
+M P W=b
+P ZX
+
+RN
+RV NO_ENUMERATION_MAPS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U multistack%b		multistack.adb		c9eec752 NE OO SU IL KU
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.text_io.enumeration_aux%s  a-tienau.adb	a-tienau.ali
+W ada.text_io.enumeration_io%s
+Z ada.text_io.integer_aux%s  a-tiinau.adb	a-tiinau.ali
+W ada.text_io.integer_io%s
+W gstack%s		gstack.adb		gstack.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.img_enum_new%s	s-imenne.adb		s-imenne.ali
+W system.val_enum%s	s-valenu.adb		s-valenu.ali
+
+D ada.ads		20160516092928 3ffc8e18 ada%s
+D a-except.ads		20160516092928 291912d5 ada.exceptions%s
+D a-ioexce.ads		20160516092927 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20160516092929 119b8fb3 ada.streams%s
+D a-tags.ads		20160516092932 01f5e3ef ada.tags%s
+D a-textio.ads		20160516092932 386df5d4 ada.text_io%s
+D a-tienau.ads		20160516092928 6a9c157b ada.text_io.enumeration_aux%s
+D a-tienio.ads		20160516092928 fc618ae6 ada.text_io.enumeration_io%s
+D a-tienio.adb		20160516092930 c9e6b5af ada.text_io.enumeration_io%b
+D a-tiinau.ads		20160516092930 8114c8e4 ada.text_io.integer_aux%s
+D a-tiinio.ads		20160516092928 aa04e5d6 ada.text_io.integer_io%s
+D a-tiinio.adb		20160516092930 df9cd7af ada.text_io.integer_io%b
+D a-unccon.ads		20160516092931 f9eb8f06 ada.unchecked_conversion%s
+D gstack.ads		20160903042432 ab5ea3cb gstack%s
+D gstack.adb		20160903042432 81ae55f7 gstack%b
+D interfac.ads		20160516092928 5ab55268 interfaces%s
+D i-cstrea.ads		20160516092927 e53d8b8e interfaces.c_streams%s
+D multistack.adb	20160903050802 5add914d multistack%b
+D system.ads		20160516092931 c3282aa7 system%s
+D s-crtl.ads		20160516092927 0ebbdb71 system.crtl%s
+D s-exctab.ads		20160516092931 54135002 system.exception_table%s
+D s-ficobl.ads		20160516092933 078245e4 system.file_control_block%s
+D s-imenne.ads		20160516092929 614c06c0 system.img_enum_new%s
+D s-parame.ads		20160516092932 7e2a0d7f system.parameters%s
+D s-soflin.ads		20160516092929 14e1eb6c system.soft_links%s
+D s-stache.ads		20160516092932 a37c21ec system.stack_checking%s
+D s-stalib.ads		20160516092931 09bd3940 system.standard_library%s
+D s-stoele.ads		20160516092932 2dc34a04 system.storage_elements%s
+D s-traent.ads		20160516092928 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20160516092930 34867c83 system.unsigned_types%s
+D s-valenu.ads		20160516092931 bb1a4295 system.val_enum%s
+D s-wchcon.ads		20160516092931 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 18|1r6 1r23 4r23 16r28 17r28 18r25
+X 6 a-textio.ads
+49K13*Text_IO 471e16 18|1w10 1r27 4r27 16r32 17r32 18r29
+166U14*New_Line 18|38s45 46s39 49s48 55s49 57s66 68s39 83s68
+242U14*Put 18|38s13 46s21 49s29 55s29 68s21 71s29 80s29
+X 8 a-tienio.ads
+26k21*Enumeration_IO 55e31 18|16r40 17r40 18r37
+32U14 Get 18|39s13[17] 46s49[18] 68s49[18]
+40U14 Put 18|82s55[16]
+X 11 a-tiinio.ads
+46k21*Integer_IO 85e27 18|4r35
+66U14 Put 18|57s53[4] 83s29[4] 83s48[4]
+X 14 gstack.ads
+4k12*Gstack 10e14 18|2w6 42r44 64r44 90r43
+5U17 Push 18|51s40[42] 76s40[64]
+6U17 Pop 18|57s40[42] 82s40[64]
+7V16 Empty{boolean} 18|54s39[42] 79s39[64]
+8V16 Full{boolean} 18|48s39[42] 70s39[64]
+X 18 multistack.adb
+3U11*multistack 3b11 102l5 102t15
+4K12 Iio[11|46] 4r60
+5E9 Month_Name 6e63 16r55 21r15
+5n24 January{5E9} 73r47
+5n33 February{5E9}
+5n43 March{5E9}
+5n50 April{5E9}
+5n57 May{5E9}
+5n62 June{5E9}
+5n68 July{5E9}
+5n74 August{5E9}
+6n24 September{5E9}
+6n35 October{5E9}
+6n44 November{5E9}
+6n54 December{5E9}
+8E9 StackType 8e43 17r55 27r35 33r35 34r21 99r22
+8n23 Int{8E9} 40r25
+8n28 Str{8E9}
+8n33 Char{8E9}
+8n39 Day{8E9} 62r28
+10E9 Operation 10e81 11r23 12r23 13r22 18r52 31r18
+10n23 insert{10E9} 11r39
+10n31 i{10E9}
+10n34 push{10E9} 11r47
+10n40 quit{10E9} 12r39
+10n46 q{10E9}
+10n49 stop{10E9} 12r45
+10n55 pop{10E9} 13r38
+10n60 delete{10E9}
+10n68 rm{10E9}
+10n72 d{10E9} 13r43
+10n75 start{10E9} 31r31
+11E12 pushops{10E9} 47r34 69r34
+12E12 quitops{10E9} 45r38 67r38
+13E12 popops{10E9} 53r37 78r37
+16K12 month_io[8|26] 16r72
+17K12 stack_io[8|26] 17r71
+18K12 op_io[8|26] 18r68
+20R9 Date 24e14 36r22 64r56
+21e7 Month{5E9} 73m38 82r68
+22i7 Day{integer} 74m38 83r42
+23i7 Year{integer} 75m38 83r61
+26K12 Get_User_Specs 28l9 28e23 30b19 98l9 98t23 99r35
+27V18 makestack{8E9} 33b18 95l13 95t22 99s50
+31e9 Opcode{10E9} 45r24 46m53 47r24 53r27 67r24 68m53 69r24 78r27
+34e12 S_Type{8E9} 39m17 40r16 62r19 94r20
+35i12 IntPop{integer} 57m44 57r57
+36r12 User_Day{20R9} 73m29 74m29 75m29 76r45 82m44 82r59 83r33 83r52
+42K26 User_Stack[14|4] 43r22 48r28 51r29 54r28 57r29
+64K26 User_Stack[14|4] 65r22 70r28 76r29 79r28 82r29
+90K25 user_stack[14|4]
+99e4 user_stack_type{8E9}
+

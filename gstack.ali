@@ -1,0 +1,28 @@
+V "GNAT Lib v2016"
+P ZX
+
+RN
+RV SPARK_05
+
+U gstack%b		gstack.adb		2af0f63c NE OO PK GE KU
+
+U gstack%s		gstack.ads		ab5ea3cb BN EE NE OO PK GE KU
+
+D gstack.ads		20160903042432 ab5ea3cb gstack%s
+D gstack.adb		20160903042432 81ae55f7 gstack%b
+D system.ads		20160516092931 c3282aa7 system%s
+X 1 gstack.ads
+2i4 Max{integer} 2|2r17 3r27 26r17 34r14
+3+9 Item 5r29 6r29 2|2r25 5r26 9r26
+4k12*Gstack 2z4 3z9 10l8 10e14 2|1b14 39l5 39t11
+5U17*Push 5>22 2|5b14 7l8 7t12
+5*22 X{3+9} 2|5b19 6r33
+6U17*Pop 6<21 2|9b14 15l8 15t11
+6*21 X{3+9} 2|9b18 11m10 13m10
+7V16*Empty{boolean} 2|10s10 17b13 23l8 23t13
+8V16*Full{boolean} 2|25b13 31l8 31t12
+9V16*Getmax{integer} 2|33b13 35l8 35t14
+X 2 gstack.adb
+2a4 S(1|3+9) 6m23 11r15 13r15
+3i4 Top{integer} 6m7 6r14 6r25 11r17 13r17 13m23 13r30 18r10 26r10 38m4
+
